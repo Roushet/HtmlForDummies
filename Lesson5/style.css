@@ -1,0 +1,249 @@
+/*фон всех страниц*/
+body{
+background-color: #f8f8f8;
+
+}
+
+/* ------- основное меню на всех страницах -------*/
+/* настройки ссылок меню*/
+
+.menu li a{
+    font-size: 1.2 em;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+}
+
+/* цвета круга 
+ #a52a2a - brown
+ #2a2aa5 - синий
+ #a5a52a - горчичный
+ */
+
+.menu :hover{
+    color: #2a2aa5;
+
+}
+
+/*убираем точки из списка */
+.menu li{
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+    text-align: right;
+}
+
+/*------ контейнер ------- */
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+
+/*------ заголовок ------- */
+.header{
+    width: 100%;
+    height: 150px;
+    display: inline-block;
+}
+
+/* высота картинки в блоке заголовка*/
+.header img{
+    height: 100%;
+    margin: 0 0 0 10%;
+}
+
+/* показывает загооловк одним рядком с предыдущим элементом*/
+.header h1{
+    display: inline;
+    margin: 0 0 0 10%;
+}
+
+
+/*------------- подвал ----------------*/
+.footer{
+    width: 100%;
+    height: 100px;
+    background: #707070;
+    text-align: right;
+    /*заколхозил бюджетный вариант липкого футера*/
+    /*
+    position: fixed;
+    bottom: -100;
+    */
+}
+
+.footer p{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+/*------ список предметов на странице каталога ------*/
+.item{
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+/* ------ описание продукта ------- */
+
+.product-header{
+    width: 80%;
+    margin: auto;
+}
+
+.product-header h1{
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #eaeaea;
+
+}
+
+.product-header h2{
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+
+}
+
+.short{
+    margin: 20%, 20%, 0%, 0%;
+    overflow: hidden;
+
+}
+
+.short p{
+    display: inline;
+    overflow: hidden;
+    margin: 20%, 20%, 0%, 0%;
+
+
+}
+
+.short li{
+    list-style-image: url(img/bullet.png);
+    font-style: normal;
+    font-family: monospace;
+
+}
+.short a img{
+    border-color: brown;
+}
+
+.short a img:hover{
+    border-color: #00000000;
+}
+
+.short input[type="submit"]:hover{
+    color: #ff0000;
+}
+
+.short input[type="submit"]:active{
+    color: #06ff00;
+}
+
+.full{
+    width: 80%;
+    margin: auto;
+}
+
+.full h1{
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #eaeaea;
+
+}
+
+.full h2{
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+
+}
+
+.details{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.details h1{
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #eaeaea;
+
+}
+
+.details h2{
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+
+}
+
+
+
+/* 
+.product-description table {
+    width: 70%;
+}
+
+.product-description table > tbody > tr:first-child {
+    height: 2em;
+}
+
+.product-description table > tbody > tr > td:first-child {
+    color: #707070;
+    text-align: left
+}
+
+.product-description table > tbody > tr > td:last-child {
+    text-align: right;
+}
+*/
+
+
+/*переделал нижнее меню на таблицу, и сделал ему персональный стиль*/
+
+.bottom-menu a{
+    font-size: 0.8em;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+    font-weight: 800;
+}
+
+/* ------ форма ввода  ------- */
+
+input{
+    width: 50%;
+    height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: brown;
+
+    text-transform: capitalize;
+}
+
+input[type="email"]{
+    color: #484343;
+    background-color: #efefc2;
+}
+
+
+input[type="submit"]{
+    width: 50%;
+    height: 2em;
+    color: #484343;
+}
+
+
+textarea{
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: brown;
+
+    text-transform: capitalize;
+}
+
